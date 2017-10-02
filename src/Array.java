@@ -5,6 +5,7 @@ import java.util.*;
  */
 
 public class Array {
+   static Random random = new Random();
 
     public static void main(String[] args) {
         //offer for user to enter two numbers
@@ -32,7 +33,7 @@ public class Array {
      */
     public static int[][] createArray(int m, int n) {
         int[][] array = new int[m][n];
-        Random random = new Random();
+
         for (int i = 0; i < m; i++) {
             for (int y = 0; y < n; y++) {
                 array[i][y] = random.nextInt(101);

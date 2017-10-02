@@ -22,12 +22,12 @@ public class Butterfly {
      */
     public static void drawButterfly(int base) {
         //creating new char array
-        char[][] butterfly = new char[base][base];
+        int[][] butterfly = new int[base][base];
         //filling the array
         for (int i = 0; i < base; i++) {
             for (int y = i; y < base - i; y++) {
-                butterfly[i][y] = 'x';
-                butterfly[base - 1 - i][base - 1 - y] = 'x';
+                butterfly[i][y] = 1;
+                butterfly[base - 1 - i][base - 1 - y] = 1;
             }
         }
         //printing the array on the console
